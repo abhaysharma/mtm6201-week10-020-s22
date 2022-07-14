@@ -1,0 +1,15 @@
+/* First, modify any default values on root element */
+:root{
+  --bs-primary: #BA59B0;
+  --bs-primary-rgb: 186, 89, 176;
+}
+/* Second, select the specific elements and modify their variables */
+.btn-primary{
+  --bs-btn-bg: #BA59B0;
+  --bs-btn-hover-bg: #803c79;
+  --bs-btn-hover-border-color:#803c79;
+}
+/* Third, select the element and update the property directly */
+.btn-primary{
+  border-color: var(--bs-primary);
+}
